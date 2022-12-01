@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    float input;
+    scanf("%f", &input);
+    printf("Enter an amount: %.2f\n", input);
+    float output = input * 105 / 100;
+    printf("With tax added: $%.2f", output);
+
+    return 0;
+}

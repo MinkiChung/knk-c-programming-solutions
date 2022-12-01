@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int amt, bills_20, bills_10, bills_5, bills_1;
+    printf("Enter a dollar amount: ");
+    scanf("%d", &amt);
+    printf("\n\n");
+
+    bills_20 = amt / 20;
+    amt -= bills_20 * 20;
+    printf("$20 bills: %d\n", bills_20);
+
+    bills_10 = amt / 10;
+    amt -= bills_10 * 10;
+    printf("$10 bills: %d\n", bills_10);
+
+    bills_5 = amt / 5;
+    amt -= bills_5 * 5;
+    printf("$5 bills: %d\n", bills_5);
+
+    bills_1 = amt / 1;
+    amt -= bills_1 * 1;
+    printf("$1 bills: %d", bills_1);
+}

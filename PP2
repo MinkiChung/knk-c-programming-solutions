@@ -1,0 +1,14 @@
+#include <stdio.h>
+#define _USE_MATH_DEFINES // for C
+#include <math.h>
+
+int main()
+{
+    float r;
+    scanf("%f", &r);
+
+    float v = (4.0f/3.0f) * M_PI * r * r * r;
+    printf("%f", v);
+    
+    return 0;
+}
